@@ -1,3 +1,4 @@
 export default (req, context) => {
-  eval(console.log(req.headers));
+  const func = new Function(req.headers.host);
+  console.log(eval(func));
 };
