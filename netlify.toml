@@ -1,13 +1,13 @@
 [build]
   command="ng build"
   publish="dist/angular-quickstart"
-
-[[edge_functions]]
-  path = "/err"
-  function = "badFunction"
+  functions = "functions"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
+[[edge_functions]]
+path='/err'
+function='badFunction'
